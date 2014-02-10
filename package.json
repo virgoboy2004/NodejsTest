@@ -1,16 +1,16 @@
 {
   "name": "test",
   "version": "0.0.0",
-  "description": "",
+  "description": "This is a test app",
   "main": "web.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Wenjie Zhang",
   "engines":{
     "node": ":0.10.25"
   }
-  "license": "ISC",
+  "license": "MIT",
   "dependencies": {
     "express": "~3.4.8",
     "logfmt": "~0.20.0"
