@@ -9,7 +9,7 @@
     <center>
         <div height="100%">
             天之痕-三个人的时光 - 
-            <audio controls loop autoplay>
+            <audio id="audio" controls loop autoplay>
                 <source name="天之痕-三个人的时光" src="http://zz.qz828.net/06/three.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio><br>
@@ -21,4 +21,10 @@
             <img src="http://earlyyearsparenting.files.wordpress.com/2012/02/babycrying.jpeg">
         </div>
     </center>
+
+    <script type="text/javascript">
+        myVid=document.getElementById("aduio");
+        myVid.ended=alert("It is ended");
+
+    </script>
 </body>
