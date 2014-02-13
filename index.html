@@ -1,6 +1,32 @@
 <!DOCTYPE html>
+<html>
+
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js">
+</script>
+
+<script>
+
+        
+    $(document).ready(function(){
+        
+        $("#audio1")[0].addEventListener('ended', function(){
+            $("#audio1")[0].currentTime = 0;
+            $("#audio2")[0].play();
+
+        }, false);
+
+        $("#audio2")[0].addEventListener('ended', function(){
+            $("#audio2")[0].currentTime = 0;
+            $("#audio1")[0].play();
+
+        }, false);
+
+
+    });
+</script>
 <title>This is a test</title>
 </head>
 
@@ -8,13 +34,11 @@
 
     <center>
         <div height="100%">
-            天之痕-三个人的时光 - 
-            <audio id="audio" controls loop autoplay>
-                <source name="天之痕-三个人的时光" src="http://zz.qz828.net/06/three.mp3" type="audio/mpeg">
+            <audio id="audio1" controls autoplay>
+                <source  src="http://zz.qz828.net/06/three.mp3" type="audio/mpeg">
                 Your browser does not support the audio element.
             </audio><br>
-            悲伤的天使 - 
-            <audio controls loop>
+            <audio  id="audio2" controls>
                 <source name="悲伤的天使" src="http://www.yhtzx.net/ez9_njyhtzx_oa/resource/private/tdoc_hujijun_media.mp3">
             </audio>
             <br>
@@ -22,9 +46,5 @@
         </div>
     </center>
 
-    <script type="text/javascript">
-        myVid=document.getElementById("aduio");
-        myVid.ended=alert("It is ended");
-
-    </script>
 </body>
+</html>
