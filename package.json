@@ -8,7 +8,7 @@
   },
   "author": "Wenjie Zhang",
   "engines":{
-    "node": ":0.10.25"
+    "node": "0.10.25"
   },
   "license": "MIT",
   "dependencies": {
